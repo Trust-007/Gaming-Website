@@ -1,0 +1,318 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-image: url('./assets/header-bg.png');
+    background-size: cover;
+    width: 100%;
+    padding-block-end: 50px;
+}
+
+nav {
+    display: block;
+}
+
+nav ul {
+    visibility: hidden;
+    cursor: none;
+    height: 10px;
+}
+
+nav div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav div div {
+    margin-left: 30px;
+}
+
+nav div div i {
+    font-size: 40px;
+}
+
+.logo {
+    visibility: hidden;
+    cursor: none;
+    text-decoration: none;
+    color: #ec5242;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    font-weight: 800;
+}
+
+nav div ul {
+    visibility: hidden;
+    cursor: none;
+}
+
+.intro-section {
+    margin: 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.intro-section h1 {
+    font-size: 10vw;
+    font-weight: bolder;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: #ec5242;
+}
+
+.intro-section div{
+    font-size: 18px;
+    font-weight: 600;
+    width: 85%;
+    background-color: white;
+    border: 1px solid #f0ebeb;
+    padding: 20px;
+    color: rgb(73, 73, 73);
+    line-height: 30px;
+    margin: 0 auto;
+}
+
+.intro-section h2 {
+    font-size: 15px;
+    margin-block: 10px;
+    color: rgb(73, 73, 73);
+    line-height: 30px;
+}
+
+.intro-section h4 {
+    color: rgb(73, 73, 73);
+    text-decoration: underline;
+}
+
+.intro-section h1 span::after {
+    content: "\a";
+    white-space: pre;
+}
+
+.about-logo {
+    background-repeat: repeat;
+    background-color: white;
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 70px;
+}
+
+.about-logo p {
+    color: rgb(51, 45, 45);
+    font-weight: 500;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.underline {
+    width: 35px;
+    height: 16px;
+    border-bottom: 1px solid rgb(239, 81, 60);
+    margin: 0 auto 20px;
+}
+
+.banner {
+  color: #ec5242;
+  font-size: 15vw;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-style: italic;
+  font-weight: 800;
+  margin-top: 40px;
+  border: 1px solid rgb(167, 160, 160);
+  padding-block: 30px;
+}
+
+.past-conventions {
+    border-top: 1px solid rgb(167, 160, 160);
+    max-width: 100%;
+    text-align: center;
+    padding: 30px;
+    padding-top: 40px;
+}
+
+.past-conventions h2 {
+    color: black;
+    font-size: 30px;
+}
+
+.past-conventions p {
+  font-size: 19px;
+  color: rgb(73, 73, 73);
+}
+
+.convention-pics {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-block: 40px;
+  padding-inline: 10%;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.first-img {
+  width: 350px;
+  display: block;
+  height: 304px;
+}
+
+.second-img {
+  width: 350px;
+  display: block;
+  height: 304px;
+}
+
+.card-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.7s;
+  background-color: rgba(239, 81, 60, 0.8);
+  height: 304px;
+  width: 350px;
+  opacity: 0;
+}
+
+.card-text:hover {
+  opacity: 1;  
+}
+
+.card-text h2 {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 40px;
+  width: 100%;
+}
+
+.card-text p {
+  color: white; 
+  width: 100%; 
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-block: 30px;
+  background-color: rgb(51, 45, 45);
+  color: beige;
+}
+
+.license {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.rights {
+  font-size: 15px;
+}
+
+@media (min-width: 768px) {
+  nav ul {
+    visibility: visible;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    gap: 25px;
+    color: white;
+    background-color: rgb(49, 45, 45);
+    padding-block: 15px;
+    padding-right: 100px;
+    cursor: pointer;
+  }
+
+    nav ul li a {
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    nav div {
+        justify-content: space-between;
+        background-color: white;
+        padding-block: 20px;
+        padding-right: 90px;
+        padding-left: 200px;
+    }
+
+    nav div div {
+        display: none;
+        cursor: none;
+    }
+
+    .logo {
+        visibility: visible;
+        cursor: pointer;
+    }
+
+    nav div ul {
+        visibility: visible;
+        cursor: pointer;
+        background-color: white;
+        gap: 60px;
+    }
+
+    nav div ul li a {
+        color: rgb(73, 73, 73);
+    }
+
+    .special-btn {
+        border: 4px solid #ec5242;
+        padding: 10px;
+        color: #ec5242;
+        white-space: nowrap;
+    }
+
+   .intro-section {
+        padding-block: 60px;
+    }
+
+    .intro-section h1 {
+        font-size: 55px;
+    }
+
+    .intro-section div {
+        width: 45%;
+        margin-block: 30px;
+    }
+
+    .intro-section h2 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+  .intro-section h4 {
+    font-size: 20px;
+  }
+
+    .banner {
+      font-size: 60px;
+      margin-inline: 30%;
+      padding-inline: 7%;
+    }
+
+    .convention-pics {
+      flex-direction: row;
+      justify-content: center;
+    }
+}
