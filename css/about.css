@@ -10,7 +10,7 @@ body {
 }
 
 header {
-  background-image: url('./assets/header-bg.png');
+  background-image: url('../assets/header-bg.png');
   background-size: cover;
   width: 100%;
   padding-block-end: 50px;
@@ -242,6 +242,31 @@ nav div ul li a {
 .card-text p {
   color: white;
   width: 100%;
+}
+
+.partners-section {
+  text-align: center;
+  background-color: rgb(39, 42, 50);
+}
+
+.partners-section h2 {
+  font-size: 30px;
+  color: white;
+  margin-top: 70px;
+  padding-top: 40px;
+}
+
+.partners {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 70px;
+}
+
+.partners img {
+  width: 150px;
 }
 
 footer {

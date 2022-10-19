@@ -10,7 +10,7 @@ body {
 }
 
 header {
-  background-image: url('./assets/header-bg.png');
+  background-image: url('../assets/header-bg.png');
   background-size: cover;
   width: 100%;
   padding-block-end: 50px;
@@ -137,7 +137,7 @@ nav div ul li a {
 }
 
 .main-program {
-  background-image: url("./assets/pattern_bg.png");
+  background-image: url("../assets/pattern_bg.png");
   background-repeat: repeat;
   background-color: rgb(39, 42, 50);
   text-align: center;

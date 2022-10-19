@@ -85,9 +85,8 @@ const speakers = [
   },
 ];
 
-const parentContainer = document.getElementById('speakers');
-
 speakers.map((item) => {
+  const parentContainer = document.getElementById('speakers');
   const speaker = document.createElement('div');
   speaker.className = 'speaker';
   const speakerImg = document.createElement('img');
