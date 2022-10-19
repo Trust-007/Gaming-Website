@@ -31,11 +31,18 @@ nav div {
   justify-content: flex-start;
   align-items: center;
 }
+
 nav div div {
-  margin-left: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: wheat;
+  z-index: 20;
 }
 
 nav div div i {
+  padding: 12px;
   font-size: 40px;
 }
 
@@ -51,13 +58,45 @@ nav div div i {
 }
 
 nav div ul {
-  visibility: hidden;
-  cursor: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 30px;
+  visibility: visible;
+  list-style: none;
+  text-decoration: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: rgba(236, 82, 21, 0.7);
+  backdrop-filter: blur(0.5rem);
+  z-index: 10;
+  text-align: left;
+  transition: 0.5s;
+  padding-top: 40px;
+  transform: translateX(-100%);
 }
+
+nav div ul li {
+  font-weight: 600;
+  font-size: 32px;
+  padding-right: 30px;
+  padding-top: 50px;
+}
+
+nav div ul li a {
+  text-decoration: none;
+  color: white;
+}
+
 .welcome-section {
   margin: 20px;
   margin-top: 40px;
 }
+
 .welcome-section h3 {
   font-size: 25px;
   color: #ec5242;
@@ -73,13 +112,13 @@ nav div ul {
 }
 
 .welcome-section p {
-    font-size: medium;
-    font-weight: 600;
-    width: 85%;
-    background-color: #f0ebeb;
-    border: 4px solid white;
-    padding: 20px;
-    color: rgb(73, 73, 73);
+  font-size: medium;
+  font-weight: 600;
+  width: 85%;
+  background-color: #f0ebeb;
+  border: 4px solid white;
+  padding: 20px;
+  color: rgb(73, 73, 73);
 }
 
 .welcome-section h2 {
@@ -97,7 +136,7 @@ nav div ul {
   white-space: pre;
 }
 
-.main-program { 
+.main-program {
   background-image: url("./assets/pattern_bg.png");
   background-repeat: repeat;
   background-color: rgb(39, 42, 50);
@@ -115,7 +154,7 @@ nav div ul {
   width: 53px;
   height: 16px;
   border-bottom: 1px solid rgb(239, 81, 60);
-  margin: 0px auto 54px;
+  margin: 0 auto 54px;
 }
 
 .program-events {
@@ -123,7 +162,7 @@ nav div ul {
   flex-direction: column;
   justify-content: center;
   gap: 20px;
-  align-items: center;  
+  align-items: center;
   text-align: left;
   margin-block: 40px;
   margin-bottom: 70px;
@@ -145,7 +184,7 @@ nav div ul {
 }
 
 .event h3 {
-  color: #ec5242;  
+  color: #ec5242;
   width: 10%;
   margin-inline: 10px;
 }
@@ -192,7 +231,7 @@ nav div ul {
   gap: 40px;
 }
 
-.speaker img{
+.speaker img {
   width: 200px;
   height: 200px;
 }
@@ -254,8 +293,11 @@ nav div ul {
 footer {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
+  gap: 15px;
   padding-block: 30px;
+  padding-inline: 20px;
 }
 
 .license {
@@ -307,10 +349,23 @@ footer {
   }
 
   nav div ul {
+    height: 0;
+    position: static;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    margin: 0;
     visibility: visible;
     cursor: pointer;
     background-color: white;
+    transform: translateX(0%);
     gap: 60px;
+  }
+
+  nav div ul li {
+    padding: 0;
+    font-size: 18px;
+    font-weight: 500;
   }
 
   nav div ul li a {

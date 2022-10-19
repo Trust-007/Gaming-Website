@@ -9,7 +9,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="../css/index.css">
         <script src="https://kit.fontawesome.com/5031df2cf9.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -22,13 +22,13 @@
            </ul> 
            <div>
                 <div>
-                    <i class="fa-sharp fa-solid fa-bars"></i>
+                    <i class="fa-sharp fa-solid fa-bars" id="menu-bar"></i>
                 </div>
                 <a href="index.html" class="logo">Gamers Oasis</a>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a class="special-btn">Support Us</a></li>
+                <ul id="drop-down">
+                    <li><a href="index.html" id="first-link">Home</a></li>
+                    <li><a href="about.html" id="second-link">About</a></li>
+                    <li><a href="about.html" class="special-btn" id="third-link">Support Us</a></li>
                 </ul>
            </div> 
          </nav>
@@ -86,74 +86,8 @@
             <section class="featured-speakers">
                 <h2>Featured Speakers</h2>
                 <div class="underline"></div>
-                <div class="speakers">
-                   <div class="speaker">
-                        <img class="speaker-img" src="http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcRsrbAMI4rXeNmZ187bn5fGYG1F0-GA-oIrdqM_OdzTi7O2sMUoMiAX6j8FfDz99uA8"
-                        alt="bobby Kotick" />
-                      <div class="speaker-details">
-                            <h3>Bobby Kotick</h3>
-                            <h4>CEO of Activision Blizzard.</h4>
-                            <div class="underline2"></div>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima earum inventore magnam ab explicabo totam? Odio omnis
-                            repellendu</p>
-                      </div>
-                   </div>
-                    <div class="speaker">
-                        <img class="speaker-img" src="https://media.gettyimages.com/photos/andrew-paradise-founder-and-chief-executive-officer-of-skillz-smiles-picture-id460558278"
-                        alt="andrew Paradise" />
-                    
-                        <div class="speaker-details">
-                            <h3>Andrew Paradise</h3>
-                            <h4>CEO of Skillz</h4>
-                            <div class="underline2"></div>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima earum inventore magnam ab explicabo totam? Odio omnis
-                            repellendu</p>
-                        </div>
-                    </div>
-                    <div class="speaker">
-                        <img class="speaker-img" src="https://www.zynga.com/storage/2018/09/leadership-img1-1.png" alt="frank D. Gibeau" />
-                        <div class="speaker-details">
-                            <h3>Frank D. Gibeau</h3>
-                            <h4>Chief Executive Officer of Zynga</h4>
-                            <div class="underline2"></div>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima earum inventore magnam ab explicabo totam? Odio omnis
-                            repellendu</p>
-                        </div>
-                    </div>
-                    <div class="speaker">
-                        <img class="speaker-img" src="https://news-cdn.softpedia.com/images/news2/Electronic-Arts-Appoints-Andrew-Wilson-as-New-CEO-383860-2.jpg"
-                        alt="Andrew Wilson" />
-                        
-                        <div class="speaker-details">
-                            <h3>Andrew Wilson</h3>
-                            <h4>Chief Executive Officer of Electronic Arts</h4>
-                            <div class="underline2"></div>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima earum inventore magnam ab explicabo totam? Odio omnis
-                            repellendu</p>
-                        </div>
-                    </div>
-                    <div class="speaker">
-                            <img class="speaker-img" src="http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcQ7UObWfNMu_4tQslNcBxTe5tm8kSahHPjbiI6fwGHmKRMIpJ8iPfhh01a-rOHaIIxQ"
-                            alt="John Riccitiello" />
-                       
-                        <div class="speaker-details">
-                            <h3>John Riccitiello</h3>
-                            <h4>Chief Executive Officer of Unity Technologies</h4>
-                            <div class="underline2"></div>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima earum inventore magnam ab explicabo totam? Odio omnis
-                            repellendu</p>
-                        </div>
-                    </div>
-                    <div class="speaker">
-                        <img class="speaker-img" src="https://www.finavia.fi/sites/default/files/styles/content_box/public/images/2021-04/KatiLevoranta1.jpg?itok=D_WNYGSf"
-                        alt="Kati Levoranta" />
-                        <div class="speaker-details">
-                            <h3>Kati Levoranta</h3>
-                            <h4>Partner and EVP at P2X Solutions Oy</h4>
-                            <div class="underline2"></div>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima earum inventore magnam ab explicabo totam? Odio omnis repellendu</p>
-                        </div>
-                    </div>
+                <div class="speakers" id="speakers">
+                   
                 </div>
             </section>
             <section class="partners-section">
@@ -161,19 +95,19 @@
                 <div class="underline"></div>
                 <div class="partners">
                  <a href="https://www.mozilla.org/en-US/foundation/" target="_blank">
-                    <img src="./assets/mozilla.png" alt="mozilla logo">
+                    <img src="../assets/mozilla.png" alt="mozilla logo">
                  </a>
                  <a href="https://www.google.com/" target="_blank">
-                    <img src="./assets/google.png" alt="google logo">
+                    <img src="../assets/google.png" alt="google logo">
                  </a>
                  <a href="http://www.naver.com/" target="_blank">
-                    <img src="./assets/naver.png" alt="naver logo">
+                    <img src="../assets/naver.png" alt="naver logo">
                  </a>
                  <a href="http://www.kakaocorp.com/" target="_blank">
-                    <img src="./assets/kakao.png" alt="kakao logo">
+                    <img src="../assets/kakao.png" alt="kakao logo">
                  </a>
                  <a href="https://www.airbnb.co.kr/" target="_blank">
-                    <img src="./assets/airbnb.png" alt="airbnb logo">
+                    <img src="../assets/airbnb.png" alt="airbnb logo">
                  </a>
                 </div>
             </section>
@@ -186,6 +120,6 @@
            2022 Gamers Oasis Nigeria. Some rights reserved.
         </div>
        </footer>
-        <script src="index.js"></script>
+        <script src="../index.js"></script>
     </body>
 </html>
