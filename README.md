@@ -11,7 +11,7 @@ This is a demo of a gaming conference website
 
 # Live Demo 
 
-[Gaming Conference](https://trust-007.github.io/Gaming-Website/)
+[Gaming Conference](https://trust-007.github.io/Gaming-Website/html/index)
 
 # Getting Started
 
